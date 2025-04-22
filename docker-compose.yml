@@ -20,7 +20,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: filme_catalogo
+      MYSQL_DATABASE: movie_database
       MYSQL_USER: laravel
       MYSQL_PASSWORD: laravel
     volumes:

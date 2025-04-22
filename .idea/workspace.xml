@@ -149,13 +149,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
     "last_opened_file_path": "//wsl.localhost/Ubuntu/home/laura/code/movies-db",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "D:\\Program Files\\JetBrains\\PhpStorm 2025.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -194,7 +194,7 @@
       <updated>1745208569571</updated>
       <workItem from="1745208571009" duration="2736000" />
       <workItem from="1745243069642" duration="28259000" />
-      <workItem from="1745357274084" duration="701000" />
+      <workItem from="1745357274084" duration="2249000" />
     </task>
     <servers />
   </component>

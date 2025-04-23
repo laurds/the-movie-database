@@ -1,6 +1,13 @@
-node_modules
+
 .env
-.idea
+**/.env
+
+node_modules/
+**/node_modules/
+
 /vendor
 /storage
+/public/storage
+
+.idea/
 .DS_Store

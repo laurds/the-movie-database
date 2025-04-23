@@ -24,26 +24,7 @@ git clone https://github.com/laurds/the-movie-database.git
 cd the-movie-database
 ```
 
-### 2️⃣ Criar o `.env` do Laravel
-
-```bash
-cd backend
-cp .env
-```
-
-Verifique se contém:
-
-```env
-APP_URL=http://localhost:8000
-DB_HOST=db
-DB_DATABASE=movie_database
-DB_USERNAME=laravel
-DB_PASSWORD=laravel
-```
-
----
-
-### 3️⃣ Subir os containers
+### 2️⃣ Subir os containers
 
 ```bash
 cd ..
@@ -52,6 +33,27 @@ docker-compose up -d --build
 
 ---
 
+### 3️⃣ Criar o `.env` do Laravel
+
+```bash
+cd backend
+touch .env
+```
+
+Configure a conexão com o banco
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=movie_database
+DB_USERNAME=laravel
+DB_PASSWORD=laravel
+```
+
+---
+
+
 ### 4️⃣ Gerar chave da aplicação Laravel
 
 ```bash
@@ -59,8 +61,6 @@ docker-compose exec app php artisan key:generate
 ```
 
 ---
-
-## 🗃️ Como importar o banco de dados
 
 ### 🔧 Rodar as migrations
 
@@ -82,7 +82,7 @@ docker-compose exec app php artisan migrate
 
 ---
 
-## 🔑 Obter sua chave da API do TMDB
+## 🔑 Obter a chave da API do TMDB
 
 1. Acesse: [https://www.themoviedb.org/](https://www.themoviedb.org/)
 2. Crie uma conta gratuita
@@ -93,7 +93,7 @@ docker-compose exec app php artisan migrate
 VITE_TMDB_API_KEY=sua_api_key
 ```
 
-5. Reinicie o Vite:
+5. Reinicie o front:
 
 ```bash
 npm run dev
